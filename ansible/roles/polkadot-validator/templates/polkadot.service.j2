@@ -1,10 +1,7 @@
 [Unit]
-Description=Polkadot Systemd Service
+Description=Polkadot Node
 
 [Service]
-{# EnvironmentFile=/etc/default/{{ app_name }} #}
-Restart=always
-RestartSec=90
 User=polkadot
 Group=polkadot
 ExecStart=/usr/local/bin/polkadot \
